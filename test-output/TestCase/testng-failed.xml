@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestCase]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.testcase.Login">
+        <methods>
+          <include name="verifyWithoutCreidential"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.testcase.Login -->
+      <class name="com.testcase.Search">
+        <methods>
+          <include name="setUp"/>
+          <include name="searchWithNoProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testcase.Search -->
+      <class name="com.testcase.Register">
+        <methods>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="registerWithCridential"/>
+          <include name="registerWithExistEmailCridential"/>
+          <include name="registerWithAllCridential"/>
+          <include name="registerDirect"/>
+        </methods>
+      </class> <!-- com.testcase.Register -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestCase] -->
